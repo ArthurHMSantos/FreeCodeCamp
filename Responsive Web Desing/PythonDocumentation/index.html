@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="teste">
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Installation">Installation</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data_types">Data types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#If...else_statement">If...else statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Loops">Loops</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring_Functions">Declaring Functions</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Class">Class</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction"><header>Introduction</header>
+            <article>
+                <p>Python is a high-level, general-purpose programming language. It was created in the late 1980s by Guido van Rossum and has since become a popular choice for many types of programming tasks, including web development, data analysis, and artificial intelligence.</p>
+                <p>One of the main advantages of Python is its simplicity and readability. It uses indentation to define code blocks, rather than curly braces like many other programming languages, which makes it easier to read and understand. Python also has a large standard library that supports many common programming tasks, such as connecting to web servers, reading and writing files, and working with data.</p>
+                <ul>
+                    <li>Python is an interpreted language, which means that it is executed at runtime by the interpreter, rather than being compiled into machine code. This makes it easy to write and test code, but it can also make Python programs run slower than programs written in compiled languages like C or C++.</li>
+                    <li>Python is a popular choice for many types of projects, including scientific computing, data analysis, and machine learning. It is also used in a wide range of applications, from web development to desktop applications to scientific simulations.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Installation"><header>Installation</header>
+            <article>
+                <p>To get started with Python, you will need to install a Python interpreter on your computer. Download the latest version of Python from the official <a href="https://www.python.org/">Python website</a>.</p>
+                <p>Once you have Python installed, you can start writing and running Python code. You can use a simple text editor (such as Notepad on Windows or TextEdit on Mac) to create a Python file, or you can use a more advanced code editor (such as PyCharm or Visual Studio Code) that includes features like syntax highlighting and code completion.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Variables"><header>Variables</header>
+            <article>
+                <p>In Python, a variable is a named location in memory that stores a value. You can create a variable by assigning a value to it using the equal sign (=). For example:</p>
+                <code class="grow-wrap">
+                <textarea name="hello" id="hello" cols="50" rows="7" readonly>
+x = 10 
+
+print(x)  # Output: 10
+
+x = "Hello, world!"
+
+print(x)  # Output: Hello, world!
+                </textarea>
+                </code>
+                <p>In Python, you don't have to specify the type of a variable when you create it. The type of a variable is determined by the value that it holds. For example, in the code above, x is an integer when it is assigned the value 10, and a string when it is assigned the value "Hello, world!". This is known as dynamic typing.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Data_types"><header>Data types</header>
+            <article>
+                <p>In Python, there are several built-in data types that you can use to store different kinds of data in your programs.</p>
+                <ul>
+                    <li>
+                        <p>Here are some of the most common data types in Python:</p>
+                        <ul>
+                            <li><strong> int: </strong> This data type represents integer values, such as 1, 2, and 3.</li>
+                            <li><strong> float: </strong>This data type represents decimal values, such as 3.14 or 0.01.</li>
+                            <li><strong> str: </strong>This data type represents a sequence of characters, or a string, such as "Hello, world!" or "abc123".</li>
+                            <li><strong> bool:</strong> This data type represents a boolean value, which can be either True or False.</li>
+                            <li><strong> list:</strong>  This data type represents an ordered collection of items, which can be of any data type. For example, you can create a list of integers, a list of strings, or a list of lists.</li>
+                            <li><strong> tuple:</strong> This data type is similar to a list, but it is immutable, meaning that you cannot modify the values in a tuple once it has been created.</li>
+                            <li><strong> set:</strong> This data type represents an unordered collection of unique items.</li>
+                            <li><strong> dict:</strong> This data type represents a collection of key-value pairs.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>You can use these data types to store different kinds of data in your programs, and you can also create your own data types using classes.</p>
+            </article>
+        </section>
+        <section class="main-section" id="If...else_statement"><header>If...else statement</header>
+            <article>
+                <p>In Python, you can use an <strong>if</strong> statement to execute a block of code <strong>if</strong> a certain condition is true. You can also use an else statement to execute a block of code <strong>if</strong> the condition is false. Here is the general syntax for an <strong>if-else</strong> statement in Python:</p>
+                <code class="grow-wrap">
+                <textarea name="if_else_code" id="if_else_code" cols="100" rows="7" readonly>
+x = 10
+    if x > 15:
+        print("x is greater than 15")
+    elif x > 10:
+        print("x is greater than 10 but not greater than 15")
+    else:
+        print("x is not greater than 10")
+                </textarea>
+                </code>
+                <p>In this example, the first condition <strong>x > 15</strong> is checked. If it is <strong>True</strong>, the code in the first <strong>if</strong> block will be executed and the string "x is greater than 15" will be printed to the console. If the first condition is <strong>False</strong>, the second condition <strong>x > 10</strong> is checked. If it is <strong>True</strong>, the code in the <strong>elif</strong> block will be executed and the string "x is greater than 10 but not greater than 15" will be printed to the console. If both conditions are <strong>False</strong>, the code in the else block will be executed and the string "x is not greater than 10" will be printed to the console.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Loops"><header>Loops</header>
+        <article>
+            <p>In Python, a loop is used to execute a block of code repeatedly. There are two types of loops in Python: <strong>for</strong> loops and <strong>while</strong> loops.</p>
+            <ul>
+                <li>For Loops</li>
+                <p>A <strong>for</strong> loop is used to iterate over a sequence (such as a list, tuple, or string) or other iterable object. Here is an example of how to use a <strong>for</strong> loop in Python:</p>
+                <code class="grow-wrap">
+                    <textarea name="for_code" id="for_code" cols="50" rows="4" readonly>
+fruits = ['apple', 'banana', 'mango']
+
+for fruit in fruits:
+  print(fruit)
+                    </textarea>
+                </code>
+                <p>In this example, the <strong>for</strong> loop will iterate over the elements in the fruits list. On each iteration, the value of the element will be assigned to the variable fruit, and the code in the loop will be executed. The output of this code will be:</p>
+                <code class="grow-wrap">
+                        <textarea name="for_output" id="" rows="3" readonly>
+apple
+banana
+mango
+                        </textarea>
+                </code>
+                <p>You can also use the range() function to specify the number of iterations in a <strong>for</strong> loop. For example:</p>
+                <code class="grow-wrap">
+                    <textarea name="for_range_code" id="for_range_code" onInput="this.parentNode.dataset.replicatedValue = this.value" readonly>
+for i in range(5):
+    print(i)
+                    </textarea>
+                </code>
+                <p>This will print the numbers 0 through 4 to the console.</p>
+                <li>While Loops</li>
+                <p>A <strong>while</strong> loop is used to repeatedly execute a block of code as long as a certain condition is True. Here is an example of how to use a <strong>while</strong> loop in Python:</p>
+                <code class="grow-wrap">
+                    <textarea name="while_code" id="while_code" cols="50" rows="4" readonly>
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+                    </textarea>
+                </code>
+                <p>In this example, the <strong>while</strong> loop will execute as long as the value of <strong>i</strong> is smaller than 5. On each iteration, the value of <strong>i</strong> will be printed to the console and then incremented by 1. The output of this code will be:</p>
+                <code class="grow-wrap">
+                    <textarea name="while_output" id="while_output" cols="50" rows="5" readonly>
+1
+2
+3
+4
+5
+                    </textarea>
+                </code>
+                <p>It's important to include a way to terminate the loop within the loop body, or the loop will run indefinitely and may cause your program to crash.</p>
+            </ul>
+        </article>
+        </section>
+        <section class="main-section" id="Declaring_Functions"><header>Declaring Functions</header>
+            <article>
+                <p>In Python, a function is a block of code that performs a specific task and can be called repeatedly in your program. Functions are defined using the <strong>def</strong> keyword, followed by the function name and a set of parentheses <strong>()</strong>. Any input parameters or arguments should be placed within these parentheses. The code block within every function starts with a colon <strong>:</strong> and is indented.</p>
+                <p>Here is an example of a simple function in Python that takes in a single parameter and returns the square of that number:</p>
+                <code class="grow-wrap">
+                    <textarea name="square_function" id="square_function" cols="30" rows="5">
+def square(x):
+    return x * x
+                      
+result = square(5)
+print(result)  # Output: 25
+                    </textarea>
+                </code>
+                <p>In this example, the function <strong>square()</strong> is defined to take in a single parameter x and returns the result of <strong>x * x</strong>. The function is then called with the argument 5, and the returned value is assigned to the variable <strong>result</strong> and printed to the console.</p>
+                <p>You can also define functions with default values for their parameters. This allows the caller of the function to omit certain arguments if they wish to use the default values. For example:</p>    
+                <code class="grow-wrap">
+                    <textarea name="default_function" id="default_function" cols="50" rows="5">
+def greet(name, greeting='Hello'):
+  print(f"{greeting}, {name}!")
+
+greet("John")  # Output: Hello, John!
+greet("Jane", greeting='Hi')  # Output: Hi, Jane!
+                    </textarea>
+                </code>
+                <p>In this example, the function <strong>greet()</strong> has a default value of <strong>'Hello'</strong> for the <strong>greeting</strong> parameter. If the caller of the function does not provide a value for <strong>greeting</strong>,  the default value will be used. However, if the caller does provide a value for <strong>greeting</strong>, that value will be used instead.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Class"><header>Class</header>
+            <article>
+                <p>In Python, a class is a template for creating objects. It allows you to define the characteristics of an object and the actions that can be performed on it.</p>
+                <p>Here is an example of how to define a simple class in Python:</p>
+                <code class="grow-wrap">
+                    <textarea name="class_Ex" id="class_Ex" cols="50" rows="12">
+class Dog:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def bark(self):
+    print("Woof!")
+
+dog1 = Dog("Fido", 3)
+print(dog1.name)  # Output: Fido
+print(dog1.age)  # Output: 3
+dog1.bark()  # Output: Woof!
+                    </textarea>
+                </code>
+                <P>In this example, the <Strong>Dog</Strong> class is defined with two attributes (<strong>name</strong> and <strong>age</strong>) and a method (<strong>bark()</strong>). The <strong>__init__</strong> method is a special method in Python that is called when an object is created. It is used to initialize the object with some default values.</P>
+                <p>To create an object of the <Strong>Dog</Strong> class, you call the class name as if it were a function and pass in any necessary arguments. In this case, we create a dog1 object with the name "Fido" and age 3. We can then access the attributes of the <strong>dog1</strong> object using dot notation (e.g. <strong>dog1.name</strong>) and call its methods (e.g. <strong>dog1.bark()</strong>).</p>
+                <p>You can also define class attributes and methods that are shared by all objects of the class. For example:</p>
+                <code class="grow-wrap">
+                    <textarea name="shaed" id="shaed" cols="50" rows="15">
+class Dog:
+  species = "Canis familiaris"  # Class attribute
+
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def bark(self):
+    print("Woof!")
+
+dog1 = Dog("Fido", 3)
+dog2 = Dog("Buddy", 5)
+
+print(dog1.species)  # Output: Canis familiaris
+print(dog2.species)  # Output: Canis familiaris
+                    </textarea>
+                </code>
+                <p>In this example, the <strong>species</strong> attribute is defined at the class level and is shared by all objects of the <strong>Dog</strong> class.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Reference"><header>Reference</header>
+        <article>
+            <ul>
+                <li>All the documentation in this page is taken from <a href="https://docs.python.org/3/" target="_blank">Python Documentation</a>.</li>
+            </ul>
+        </article>
+        </section>
+    </main> 
+</body>
+</html>
